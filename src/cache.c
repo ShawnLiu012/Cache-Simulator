@@ -11,9 +11,9 @@
 //
 // TODO:Student Information
 //
-const char *studentName = "NAME";
-const char *studentID   = "PID";
-const char *email       = "EMAIL";
+const char *studentName = "Sha Liu";
+const char *studentID   = "A53239717";
+const char *email       = "shl237@ucsd.edu";
 
 //------------------------------------//
 //        Cache Configuration         //
