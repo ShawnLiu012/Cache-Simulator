@@ -25,6 +25,7 @@ extern const char *email;
 
 #define TRUE 1
 #define FALSE 0
+#define ADDR_SIZE 32
 
 //------------------------------------//
 //        Cache Configuration         //
@@ -45,6 +46,7 @@ extern uint32_t inclusive;      // Indicates if the L2 is inclusive
 
 extern uint32_t blocksize;      // Block/Line size
 extern uint32_t memspeed;       // Latency of Main Memory
+
 
 //------------------------------------//
 //          Cache Statistics          //
@@ -84,5 +86,9 @@ uint32_t dcache_access(uint32_t addr);
 // Return the access time for the memory operation
 //
 uint32_t l2cache_access(uint32_t addr);
+
+// Free the caches
+//
+void free_cache();
 
 #endif

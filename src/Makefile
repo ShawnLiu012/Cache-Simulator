@@ -2,7 +2,7 @@ CC=gcc
 OPTS=-g -std=c99 -Werror
 
 all: main.o cache.o
-	$(CC) $(OPTS) -lm -o cache main.o cache.o
+	$(CC) $(OPTS) -o cache main.o cache.o -lm
 
 main.o: main.c cache.h
 	$(CC) $(OPTS) -c main.c
